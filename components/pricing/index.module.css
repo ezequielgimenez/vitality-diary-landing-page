@@ -1,0 +1,32 @@
+.contenedorPricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorTitulo {
+  width: 787px;
+}
+
+.contenedorTitulo h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #170f49;
+  text-align: center;
+}
+
+.contenedorTitulo p {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  color: #708290;
+  text-align: center;
+}
+
+.contenedorCards {
+  display: flex;
+  margin: 55px;
+  gap: 55px;
+}

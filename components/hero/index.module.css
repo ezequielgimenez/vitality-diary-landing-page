@@ -1,0 +1,7 @@
+.contenedorImg {
+  display: flex;
+  position: absolute;
+  width: 1440px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}

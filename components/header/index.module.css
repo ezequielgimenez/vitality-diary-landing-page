@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  height: 127px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contenedorLogo {
+  cursor: pointer;
+  margin: 20px 540px 13px 41px;
+}
+
+.firstLetter {
+  font-family: "Raleway", sans-serif;
+  /* font-family: "DM Sans", sans-serif; */
+
+  font-weight: 700;
+  color: #170f49;
+  font-size: 40px;
+}
+
+.tituloLogo {
+  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #170f49;
+}
+
+.contenedorNav {
+  width: 634px;
+  height: 72px;
+}
+
+.contenedorLista {
+  display: flex;
+}
+
+.contenedorLista li {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  line-height: 39px;
+  list-style: none;
+  margin-right: 79px;
+  font-size: 18px;
+}
