@@ -64,14 +64,8 @@ class MyDocument extends Document {
 
           {/* SEO Meta tags */}
           <meta name="google-site-verification" content="" />
-          <meta
-            name="description"
-            content="Descubre nuestra colección de zapatillas, zapatos y botas de moda para hombre y mujer. Compra en Modakelar con envíos rápidos y seguros."
-          />
-          <meta
-            name="keywords"
-            content="zapatillas, zapatos, botas, calzado hombre, calzado mujer, zapatillas deportivas, moda"
-          />
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
         </Head>
         <body>
           <Main />
