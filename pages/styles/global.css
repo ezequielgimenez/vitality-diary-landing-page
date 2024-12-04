@@ -24,5 +24,6 @@ font-family: "Raleway", sans-serif; */
   --color-secondary: #fadcb1;
   --color-tertiary: #6f6c90;
   --color-background: #f9fafc;
+  --color-background-footer: #252525;
   --full-width: 1440px;
 }
