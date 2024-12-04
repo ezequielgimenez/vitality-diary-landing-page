@@ -43,6 +43,7 @@ class MyDocument extends Document {
         <Head>
           {/* Favicon */}
           <link rel="icon" href="/images/icono.png" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
 
           {/* Preconexión a Google Fonts */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
