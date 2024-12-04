@@ -69,7 +69,7 @@ export const MyButtonOutlined = styled(ButtonOutlined)`
   text-transform: none;
 `;
 
-export const MyButton = styled(NormalButton)`
+export const MyButtonHero = styled(NormalButton)`
   background-color: #fadcb1;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -82,7 +82,21 @@ export const MyButton = styled(NormalButton)`
   text-transform: none;
 `;
 
-export const MyButtonSmall = styled(NormalButton)`
+export const MyButtonHeroMobile = styled(NormalButton)`
+  background-color: #170f49;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  width: 215px;
+  height: 56px;
+  font-size: 20px;
+  font-weight: 800;
+  box-shadow: none;
+  border-radius: 10px;
+  color: white;
+  text-transform: none;
+`;
+
+export const MyButtonSmallCard = styled(NormalButton)`
   background-color: #fadcb1;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -95,7 +109,7 @@ export const MyButtonSmall = styled(NormalButton)`
   text-transform: none;
 `;
 
-export const MyButtonSmallBlue = styled(NormalButton)`
+export const MyButtonSmallBlueCard = styled(NormalButton)`
   background-color: #170f49;
   font-family: "Raleway", sans-serif;
   font-weight: 600;

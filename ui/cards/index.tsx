@@ -1,5 +1,5 @@
 import style from "./index.module.css";
-import { MyButtonSmall, MyButtonSmallBlue } from "ui/buttons";
+import { MyButtonSmallCard, MyButtonSmallBlueCard } from "ui/buttons";
 import Image from "next/image";
 
 export function MyCard() {
@@ -36,7 +36,7 @@ export function MyCard() {
           </p>
         </div>
         <div className={style.contenedorButton}>
-          <MyButtonSmall>Comprar</MyButtonSmall>
+          <MyButtonSmallCard>Comprar</MyButtonSmallCard>
         </div>
       </div>
     </div>
@@ -83,7 +83,7 @@ export function MyCardPremium() {
           </p>
         </div>
         <div className={style.contenedorButton}>
-          <MyButtonSmallBlue>Comprar</MyButtonSmallBlue>
+          <MyButtonSmallBlueCard>Comprar</MyButtonSmallBlueCard>
         </div>
       </div>
     </div>

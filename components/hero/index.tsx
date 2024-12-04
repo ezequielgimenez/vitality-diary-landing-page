@@ -1,7 +1,7 @@
 import style from "./index.module.css";
 import Image from "next/image";
 import { MyHeader } from "components/header";
-import { MyHero } from "components/section-text";
+import { SectionTextComp } from "components/section-text";
 
 export default function HeroSection() {
   return (
@@ -16,8 +16,17 @@ export default function HeroSection() {
             height={625}
           ></Image>
         </div>
+        <div className={style.contenedorImgMobile}>
+          <Image
+            className={style.img}
+            src="/images/decore-mobile.png"
+            alt="decore"
+            width={375}
+            height={861}
+          ></Image>
+        </div>
         <MyHeader></MyHeader>
-        <MyHero></MyHero>
+        <SectionTextComp></SectionTextComp>
       </section>
     </div>
   );

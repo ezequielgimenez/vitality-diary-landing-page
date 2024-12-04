@@ -5,3 +5,20 @@
   justify-content: flex-end;
   align-items: flex-end;
 }
+
+.contenedorImgMobile {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .contenedorImg {
+    display: none;
+  }
+  .contenedorImgMobile {
+    display: flex;
+    position: absolute;
+    width: 375px;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}

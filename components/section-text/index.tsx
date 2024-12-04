@@ -1,8 +1,9 @@
 import style from "./index.module.css";
-import { MyButton } from "ui/buttons";
+import { MyButtonHero, MyButtonHeroMobile } from "ui/buttons";
+
 import Image from "next/image";
 
-export function MyHero() {
+export function SectionTextComp() {
   return (
     <div>
       <section className={style.section}>
@@ -17,7 +18,10 @@ export function MyHero() {
             </p>
           </div>
           <div className={style.contenedorBoton}>
-            <MyButton>Comienza ahora</MyButton>
+            <MyButtonHero>Comienza ahora</MyButtonHero>
+          </div>
+          <div className={style.contenedorBotonMobile}>
+            <MyButtonHeroMobile>Comienza ahora</MyButtonHeroMobile>
           </div>
         </div>
         <div className={style.contenedorImagen}>
