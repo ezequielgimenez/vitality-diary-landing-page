@@ -1,0 +1,39 @@
+.stats__card {
+  flex: 1 1 calc(25% - 1rem); /* Adjusts to four cards per row */
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+@media (max-width: 950px) {
+  .stats__card {
+    flex: 1 1 calc(50% - 1rem); /* Two cards per row on medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .stats__card {
+    flex: 1 1 calc(100% - 1rem); /* One card per row on small screens */
+  }
+}
+
+.stats__card {
+  font-family: var(--font-family);
+}
+.stats__card h3 {
+  color: var(--color-secondary);
+  font-size: 50px;
+  margin: 0;
+}
+
+.stats__card h2 {
+  color: var(--color-primary);
+  font-size: 24px;
+  margin: 30px 0 20px 0;
+}
+
+.stats__card p {
+  color: var(--color-tertiary);
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+}
