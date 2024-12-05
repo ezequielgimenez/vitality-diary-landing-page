@@ -164,7 +164,13 @@
     margin-left: 30px;
   }
 }
-@media (max-width: 1440px) {
+@media (min-width: 1280px) {
+  .contenedorBoton {
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
   .contenedorBoton {
     margin-left: 114px;
   }

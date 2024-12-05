@@ -46,7 +46,7 @@
   font-size: 20px;
 }
 
-@media (min-width: 360px) and (max-width: 768px) {
+@media (min-width: 360px) and (max-width: 1024px) {
   .contenedorImg {
     display: none;
   }
@@ -101,7 +101,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .contenedorImg {
     display: block;
   }
@@ -115,11 +115,10 @@
 
   .contenedorParrafo {
     display: flex;
-    margin-left: 70px;
+    margin-left: 0;
   }
-
   .items {
-    width: 200px;
+    width: 280px;
     margin: 0 58px;
   }
 }

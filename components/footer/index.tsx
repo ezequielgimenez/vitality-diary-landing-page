@@ -17,9 +17,9 @@ export function Footer() {
             </div>
           </h2>
           <div>
-            <a href="#">Features</a>
-            <a href="#">Pricing</a>
-            <a href="#">Contact</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
         <div className={style.footer_secondLinks}>

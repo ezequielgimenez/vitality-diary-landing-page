@@ -41,7 +41,9 @@ export function MyHeader() {
 
               <li>
                 <MyButtonOutlined onClick={() => "hola"}>
-                  Contact
+                  <a href="#contact" className={style.link}>
+                    Contact
+                  </a>
                 </MyButtonOutlined>
               </li>
               <li>
@@ -101,7 +103,7 @@ export function MyHeader() {
               </li>
 
               <li>
-                <Link href="#contacto" scroll={false} className={style.link}>
+                <Link href="#contact" scroll={false} className={style.link}>
                   Contacto
                 </Link>
               </li>

@@ -39,17 +39,24 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .contenedorImgMobile {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
   .imgMobile {
-    width: 768px;
-    height: 900px;
+    width: 550px;
+    height: 625px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .contenedorImg {
     display: flex;
     position: absolute;
-    width: 1440px;
+    width: 100%;
     justify-content: flex-end;
     align-items: flex-end;
   }
@@ -58,6 +65,13 @@
     display: none;
   }
 
+  .img {
+    width: 650px;
+    height: 625px;
+  }
+}
+
+@media (min-width: 1440px) {
   .img {
     width: 748px;
     height: 625px;

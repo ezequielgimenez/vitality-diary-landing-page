@@ -3,6 +3,7 @@
   place-items: center;
   text-align: center;
   margin: 5rem 0;
+  background-color: white;
 }
 
 .stats {
@@ -15,6 +16,7 @@
   gap: 1rem;
   max-width: var(--full-width);
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .stats__header {

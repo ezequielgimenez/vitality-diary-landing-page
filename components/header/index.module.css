@@ -58,10 +58,10 @@
 
 .link:hover {
   color: #5e9d89;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-decoration-color: #5e9d89;
-  text-underline-offset: 5px;
-  text-decoration-thickness: 2px;
+  /* text-underline-offset: 5px;
+  text-decoration-thickness: 2px; */
   transition: 0.3s ease;
 }
 
@@ -151,7 +151,51 @@
 }
 
 @media (min-width: 1024px) {
+  .headerDesktop {
+    display: flex;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    height: 127px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .headerMobile {
+    display: none;
+  }
+
   .contenedorLogo {
-    padding-left: 10px;
+    cursor: pointer;
+    margin: 20px 200px 13px 41px;
+  }
+
+  .firstLetter {
+    font-family: "Raleway", sans-serif;
+    /* font-family: "DM Sans", sans-serif; */
+
+    font-weight: 700;
+    color: #170f49;
+    font-size: 40px;
+  }
+
+  .tituloLogo {
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #170f49;
+  }
+
+  .contenedorNav {
+    width: 610px;
+    height: 72px;
+  }
+
+  .contenedorLista {
+    display: flex;
+    list-style: none;
+  }
+  .contenedorLista li {
+    margin-right: 79px;
   }
 }
