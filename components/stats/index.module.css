@@ -1,0 +1,31 @@
+.statsLayout {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.stats {
+  width: 100%;
+}
+
+.stats__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: var(--full-width);
+  margin: 0 auto;
+}
+
+.stats__header {
+  font-family: var(--font-family);
+  color: var(--color-primary);
+  font-size: 40px;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 950px) {
+  .stats__header {
+    font-size: 30px;
+  }
+}

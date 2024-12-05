@@ -17,7 +17,14 @@ a {
   text-decoration: none;
 }
 
-/* font-weight: "";
-font-family: "Raleway", sans-serif; */
-/* O */
-/* font-family: "DM Sans", serif; */
+/* Variables Globales */
+
+:root {
+  --font-family: "Raleway", sans-serif;
+  --color-primary: #170f49;
+  --color-secondary: #fadcb1;
+  --color-tertiary: #6f6c90;
+  --color-background: #f9fafc;
+  --color-background-footer: #252525;
+  --full-width: 1440px;
+}
