@@ -31,7 +31,7 @@
   gap: 55px;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 360px) and (max-width: 768px) {
   .contenedorPricing {
     display: flex;
     flex-direction: column;
@@ -65,7 +65,12 @@
     justify-content: center;
     align-items: center;
     margin: 20px 0;
-    padding: 0 20px;
     gap: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contenedorTitulo {
+    width: 450px;
   }
 }

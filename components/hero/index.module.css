@@ -10,15 +10,56 @@
   display: none;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 360px) {
   .contenedorImg {
     display: none;
   }
   .contenedorImgMobile {
     display: flex;
     position: absolute;
-    width: 375px;
     justify-content: flex-end;
     align-items: flex-end;
+  }
+
+  .imgMobile {
+    width: 360px;
+  }
+}
+
+@media (min-width: 375px) {
+  .imgMobile {
+    width: 375px;
+  }
+}
+
+@media (min-width: 390px) {
+  .imgMobile {
+    width: 390px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .imgMobile {
+    width: 768px;
+    height: 900px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenedorImg {
+    display: flex;
+    position: absolute;
+    width: 1440px;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .contenedorImgMobile {
+    display: none;
+  }
+
+  .img {
+    width: 748px;
+    height: 625px;
   }
 }

@@ -11,10 +11,10 @@ export default function MyPage() {
     <div>
       <HeroSection></HeroSection>
       <FeaturesComp></FeaturesComp>
-      <PricingComp></PricingComp>
       <HowWorkComponent></HowWorkComponent>
-
       <StatsSection></StatsSection>
+      <PricingComp></PricingComp>
+
       <Footer></Footer>
     </div>
   );

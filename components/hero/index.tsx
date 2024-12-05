@@ -18,10 +18,10 @@ export default function HeroSection() {
         </div>
         <div className={style.contenedorImgMobile}>
           <Image
-            className={style.img}
+            className={style.imgMobile}
             src="/images/decore-mobile.png"
             alt="decore"
-            width={375}
+            width={360}
             height={861}
           ></Image>
         </div>
