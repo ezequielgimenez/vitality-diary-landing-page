@@ -3,7 +3,11 @@ import style from "./index.module.css";
 export function HowWorkComponent() {
   return (
     <div>
-      <section id="how-work" className={style.contenedorMain}>
+      <section
+        data-aos="zoom-in-right"
+        id="how-work"
+        className={style.contenedorMain}
+      >
         <div className={style.contenedorTitulo}>
           <h1>Obtenga más información sobre el proceso</h1>
         </div>
@@ -65,7 +69,7 @@ export function HowWorkComponent() {
           </div>
         </div>
         <div className={style.contenedorParrafo}>
-          <div className={style.items}>
+          <div data-aos="zoom-in-right" className={style.items}>
             <div>
               <h1>Regístrate</h1>
             </div>
@@ -73,7 +77,7 @@ export function HowWorkComponent() {
               <p>Crea tu cuenta en segundos.</p>
             </div>
           </div>
-          <div className={style.items}>
+          <div data-aos="zoom-in-right" className={style.items}>
             <div>
               <h1>Completa tus datos</h1>
             </div>
@@ -86,7 +90,7 @@ export function HowWorkComponent() {
               </p>
             </div>
           </div>
-          <div className={style.items}>
+          <div data-aos="zoom-in-right" className={style.items}>
             <div>
               <h1>Utiliza la aplicación web</h1>
             </div>

@@ -5,7 +5,7 @@ import { HowWorkComponent } from "components/how-work";
 import { StatsSection } from "components/stats";
 import { Footer } from "components/footer";
 import { ContactComponet } from "components/contact";
-
+import { MyHeader } from "components/header";
 export default function MyPage() {
   return (
     <div>

@@ -5,7 +5,9 @@ export function StatsSection() {
   return (
     <div className={style.statsLayout}>
       <section id="stats" className={style.stats}>
-        <h2 className={style.stats__header}>Nuestros resultados en cifras</h2>
+        <h2 data-aos="zoom-in-right" className={style.stats__header}>
+          Nuestros resultados en cifras
+        </h2>
         <div className={style.stats__container}>
           <StatsCard
             percentage="99%"

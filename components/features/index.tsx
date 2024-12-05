@@ -4,10 +4,10 @@ export function FeaturesComp() {
   return (
     <div>
       <section id="features" className={style.featuresSection}>
-        <div className={style.contenedorTitulo}>
+        <div data-aos="zoom-in-right" className={style.contenedorTitulo}>
           <h2>Beneficios Destacados</h2>
         </div>
-        <div className={style.contenedorInfo}>
+        <div data-aos="zoom-in-right" className={style.contenedorInfo}>
           <div className={style.contenedorImg}>
             <img
               src="https://res.cloudinary.com/dkzmrfgus/image/upload/v1732816597/Landing%20Page/features/1.png"
@@ -29,7 +29,7 @@ export function FeaturesComp() {
             </div>
           </div>
         </div>
-        <div className={style.contenedorInfo}>
+        <div data-aos="zoom-in-right" className={style.contenedorInfo}>
           <div className={style.contenedorImg}>
             <img
               src="https://res.cloudinary.com/dkzmrfgus/image/upload/v1732821105/Landing%20Page/features/2.png"
@@ -51,7 +51,7 @@ export function FeaturesComp() {
             </div>
           </div>
         </div>
-        <div className={style.contenedorInfo}>
+        <div data-aos="zoom-in-right" className={style.contenedorInfo}>
           <div className={style.contenedorImg}>
             <img
               src="https://res.cloudinary.com/dkzmrfgus/image/upload/v1732821123/Landing%20Page/features/3.png"
