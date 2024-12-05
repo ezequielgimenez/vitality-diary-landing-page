@@ -9,13 +9,13 @@ import { Footer } from "components/footer";
 export default function MyPage() {
   return (
     <div>
-      <HeroSection></HeroSection>
+      {/* <HeroSection></HeroSection>
       <FeaturesComp></FeaturesComp>
       <HowWorkComponent></HowWorkComponent>
       <StatsSection></StatsSection>
       <PricingComp></PricingComp>
-
-      <Footer></Footer>
+      <StatsSection></StatsSection>
+      <Footer></Footer> */}
     </div>
   );
 }

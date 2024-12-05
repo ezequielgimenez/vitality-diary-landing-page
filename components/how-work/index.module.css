@@ -112,4 +112,14 @@
   .contenedorImgMobile {
     display: none;
   }
+
+  .contenedorParrafo {
+    display: flex;
+    margin-left: 70px;
+  }
+
+  .items {
+    width: 200px;
+    margin: 0 58px;
+  }
 }
