@@ -95,10 +95,29 @@ export function MyHeader() {
             }  `}
           >
             <div className={style.contenedorLink}>
-              <div className={style.contenedorButtonClose}>
-                <button className={style.closeButton} onClick={handleNav}>
-                  ✖️
-                </button>
+              <div className={style.contenedorButtonMobile}>
+                <div>
+                  <MenuButtonLanguage
+                    item1="ES"
+                    item2="EN"
+                    onClickItem1={() => changeLenguage("es")}
+                    onClickItem2={() => changeLenguage("en")}
+                  >
+                    <Image
+                      className={style.img}
+                      src="/images/lenguaje.png"
+                      alt="lenguaje"
+                      width={32}
+                      height={32}
+                    ></Image>
+                    ⌵
+                  </MenuButtonLanguage>
+                </div>
+                <div>
+                  <button className={style.closeButton} onClick={handleNav}>
+                    ✖️
+                  </button>
+                </div>
               </div>
               <li>
                 <Link href="#features" scroll={false} className={style.link}>
