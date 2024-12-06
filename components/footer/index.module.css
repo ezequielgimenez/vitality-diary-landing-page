@@ -24,6 +24,7 @@
   font-family: var(--font-family);
   font-weight: 700;
   color: #525151;
+  cursor: pointer;
 }
 
 .footer_mainLinks {

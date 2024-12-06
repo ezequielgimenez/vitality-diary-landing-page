@@ -3,6 +3,8 @@ import "./styles/global.css";
 import "aos/dist/aos.css"; // Importa los estilos de AOS
 import { useEffect } from "react";
 import AOS from "aos";
+import { appWithTranslation } from "next-i18next";
+import "../i18n";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -19,4 +21,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);

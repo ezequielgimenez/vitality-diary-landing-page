@@ -1,0 +1,43 @@
+{
+  "titulo": "Transforma tu vida, un hábito a la vez",
+  "parrafo": "Mejora tu bienestar con hábitos saludables, siguiendo tu progreso de manera simple y efectiva",
+  "buttonComienza": "Comienza ahora",
+
+  "titulo-Beneficios": "Beneficios Destacados",
+  "titulo-item1": "Crea y organiza",
+  "parrafo-item1": "Establece y organiza tu rutina diaria fijando metas semanales claras y alcanzables. Personaliza tus hábitos según tus necesidades y lleva el control de tus avances para mantenerte enfocado y motivado cada día.",
+  "titulo-item2": "Recibe notificaciones",
+  "parrafo-item2": "Recibe recordatorios para mantenerte al día con tus habitos diarios y metas semanales. Recibe notificaciones para completar tus tareas pendientes sin completar del día. Nunca más olvides lo importante para tu bienestar.",
+  "titulo-item3": "Observa tu mejora",
+  "parrafo-item3": "Visualiza tu progreso de forma clara y sencilla. Obtén rutinas saludables diseñadas especialmente para ti, adaptadas a tus objetivos y necesidades mejorando tu salud y aumentando tu productividad dedicando más tiempo a lo que realmente amas.",
+
+  "titulo-work": "Obtenga más información sobre el proceso",
+  "titulo-item-work1": "Regístrate",
+  "parrafo-item-work1": "Crea tu cuenta en segundos.",
+  "titulo-item-work2": "Completa tus datos",
+  "parrafo-item-work2": "Configura tu perfil de manera rápida y sencilla. Completa tu información básica para personalizar tu experiencia y recibir recomendaciones adaptadas a tus metas.",
+  "titulo-item-work3": "Utiliza la aplicación web",
+  "parrafo-item-work3": "Establece rutinas manteniendo el foco con notificaciones y celebra cada avance hacia una rutina mejor.",
+
+  "titulo-stats": "Nuestros resultados en cifras",
+  "titulo-item-stats1": "Usuarios satisfechos",
+  "parrafo-item-stats1": "Más de 10,000 usuarios ya estan transformando su vida con nuestra plataforma.",
+  "titulo-item-stats2": "Tareas completadas",
+  "parrafo-item-stats2": "Se han completado más de 300,000 hábitos en nuestra plataforma.",
+  "titulo-item-stats3": "Tasa de retención",
+  "parrafo-item-stats3": "El 90% de los usuarios continúan organizando su vida con nosotros después del primer mes.",
+  "titulo-item-stats4": "Progreso alcanzado",
+  "parrafo-item-stats4": "El 85% de los usuarios reportan mejoras en su productividad y bienestar en las primeras 4 semanas.",
+
+  "titulo-precio": "Nuestros precios",
+  "parrafo-precio": "Elige entre nuestro plan gratuito para comenzar, o desbloquea todas las funciones avanzadas con nuestro plan Premium. ¡Tú decides cómo transformar tus hábitos!",
+  "item-precio1": "Creación de hábitos diarios ilimitados",
+  "item-precio2": "Metas semanales",
+  "item-precio3": "Recordatorios de tareas pendientes",
+  "item-precio4": "Obtenga rutinas saludables adaptadas a tus objetivos",
+  "item-precio5": "Mantente al tanto de tu progreso",
+
+  "comprar": "Comprar",
+
+  "contacto-titulo": "Contáctanos"
+}

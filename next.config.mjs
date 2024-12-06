@@ -1,5 +1,3 @@
-/** @type {import('next').NextConfig} */
-
 import withSvgr from "next-svgr";
 
 const nextConfig = withSvgr({
@@ -15,6 +13,10 @@ const nextConfig = withSvgr({
       "nikearprod.vtexassets.com",
       "static.nike.com",
     ],
+  },
+  i18n: {
+    locales: ["es", "en"], // Idiomas disponibles
+    defaultLocale: "es", // Idioma predeterminado
   },
 });
 

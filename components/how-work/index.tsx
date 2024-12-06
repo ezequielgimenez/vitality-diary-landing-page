@@ -1,6 +1,8 @@
 import style from "./index.module.css";
+import { useTranslation } from "react-i18next";
 
 export function HowWorkComponent() {
+  const { t } = useTranslation("common");
   return (
     <div>
       <section
@@ -9,7 +11,7 @@ export function HowWorkComponent() {
         className={style.contenedorMain}
       >
         <div className={style.contenedorTitulo}>
-          <h1>Obtenga más información sobre el proceso</h1>
+          <h1>{t("titulo-work")}</h1>
         </div>
         <div className={style.contenedorImg}>
           <img
@@ -26,10 +28,10 @@ export function HowWorkComponent() {
               />
             </div>
             <div className={style.contenedorTextoMobile}>
-              <h1>Regístrate</h1>
+              <h1>{t("titulo-item-work1")}</h1>
             </div>
             <div className={style.contenedorTextoMobile}>
-              <p>Crea tu cuenta en segundos.</p>
+              <p>{t("parrafo-item-work1")}</p>
             </div>
           </div>
           <div className={style.itemMobile}>
@@ -40,14 +42,10 @@ export function HowWorkComponent() {
               />
             </div>
             <div className={style.contenedorTextoMobile}>
-              <h1>Completa tus datos</h1>
+              <h1>{t("titulo-item-work2")}</h1>
             </div>
             <div className={style.contenedorTextoMobile}>
-              <p>
-                Configura tu perfil de manera rápida y sencilla. Completa tu
-                información básica para personalizar tu experiencia y recibir
-                recomendaciones adaptadas a tus metas.
-              </p>
+              <p>{t("parrafo-item-work2")}</p>
             </div>
           </div>
           <div className={style.itemMobile}>
@@ -58,48 +56,38 @@ export function HowWorkComponent() {
               />
             </div>
             <div className={style.contenedorTextoMobile}>
-              <h1>Utiliza la aplicación web</h1>
+              <h1>{t("titulo-item-work3")}</h1>
             </div>
             <div className={style.contenedorTextoMobile}>
-              <p>
-                Establece rutinas manteniendo el foco con notificaciones y
-                celebra cada avance hacia una rutina mejor.
-              </p>
+              <p>{t("parrafo-item-work3")}</p>
             </div>
           </div>
         </div>
         <div className={style.contenedorParrafo}>
           <div data-aos="zoom-in-right" className={style.items}>
             <div>
-              <h1>Regístrate</h1>
+              <h1>{t("titulo-item-work1")}</h1>
             </div>
             <div>
-              <p>Crea tu cuenta en segundos.</p>
-            </div>
-          </div>
-          <div data-aos="zoom-in-right" className={style.items}>
-            <div>
-              <h1>Completa tus datos</h1>
-            </div>
-
-            <div>
-              <p>
-                Configura tu perfil de manera rápida y sencilla. Completa tu
-                información básica para personalizar tu experiencia y recibir
-                recomendaciones adaptadas a tus metas.
-              </p>
+              <p>{t("parrafo-item-work1")}</p>
             </div>
           </div>
           <div data-aos="zoom-in-right" className={style.items}>
             <div>
-              <h1>Utiliza la aplicación web</h1>
+              <h1>{t("titulo-item-work2")}</h1>
             </div>
 
             <div>
-              <p>
-                Establece rutinas manteniendo el foco con notificaciones y
-                celebra cada avance hacia una rutina mejor.
-              </p>
+              <p>{t("parrafo-item-work2")}</p>
+            </div>
+          </div>
+          <div data-aos="zoom-in-right" className={style.items}>
+            <div>
+              <h1>{t("titulo-item-work3")}</h1>
+            </div>
+
+            <div>
+              <p>{t("parrafo-item-work3")}</p>
             </div>
           </div>
         </div>

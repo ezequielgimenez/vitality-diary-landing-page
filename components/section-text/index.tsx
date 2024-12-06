@@ -2,26 +2,32 @@ import style from "./index.module.css";
 import { MyButtonHero, MyButtonHeroMobile } from "ui/buttons";
 
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 
 export function SectionTextComp() {
+  const { t, i18n } = useTranslation("common");
+
+  useEffect(() => {
+    console.log("Idioma actual:", i18n.language); // Verifica el idioma actual
+    console.log("Traducción de 'titulo':", t("titulo")); // Verifica si está cargando la traducción
+  }, [i18n.language]);
+
   return (
     <div>
       <section className={style.section}>
         <div className={style.contenedorTextos}>
           <div className={style.contenedorh1}>
-            <h1>Transforma tu vida, un hábito a la vez</h1>
+            <h1>{t("titulo")}</h1>
           </div>
           <div className={style.contenedorParrafo}>
-            <p>
-              Mejora tu bienestar con hábitos saludables, siguiendo tu progreso
-              de manera simple y efectiva.
-            </p>
+            <p>{t("parrafo")}</p>
           </div>
           <div className={style.contenedorBoton}>
-            <MyButtonHero>Comienza ahora</MyButtonHero>
+            <MyButtonHero>{t("buttonComienza")}</MyButtonHero>
           </div>
           <div className={style.contenedorBotonMobile}>
-            <MyButtonHeroMobile>Comienza ahora</MyButtonHeroMobile>
+            <MyButtonHeroMobile>{t("buttonComienza")}</MyButtonHeroMobile>
           </div>
         </div>
         <div className={style.contenedorImagen}>

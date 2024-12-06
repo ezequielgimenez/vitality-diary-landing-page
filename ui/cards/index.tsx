@@ -1,8 +1,11 @@
 import style from "./index.module.css";
 import { MyButtonSmallCard, MyButtonSmallBlueCard } from "ui/buttons";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 
 export function MyCard() {
+  const { t } = useTranslation("common");
+
   return (
     <div>
       <div className={style.contenedorCard}>
@@ -16,27 +19,23 @@ export function MyCard() {
         </div>
         <div className={style.contenedorItems}>
           <p>
-            <span className={style.icon}>✔</span> Creación de hábitos diarios
-            ilimitados
+            <span className={style.icon}>✔</span> {t("item-precio1")}
           </p>
           <p>
-            <span className={style.icon}>✔</span> Metas semanales
+            <span className={style.icon}>✔</span> {t("item-precio2")}
           </p>
           <p>
-            <span className={style.icon}>✔</span> Recordatorios de tareas
-            pendientes
+            <span className={style.icon}>✔</span> {t("item-precio3")}
           </p>
           <p>
-            <span className={style.icon}>✖</span> Obtenga rutinas saludables
-            adaptadas a tus objetivos
+            <span className={style.icon}>✖</span> {t("item-precio4")}
           </p>
           <p>
-            <span className={style.icon}>✖</span> Mantente al tanto de tu
-            progreso
+            <span className={style.icon}>✖</span> {t("item-precio5")}
           </p>
         </div>
         <div className={style.contenedorButton}>
-          <MyButtonSmallCard>Comprar</MyButtonSmallCard>
+          <MyButtonSmallCard>{t("comprar")}</MyButtonSmallCard>
         </div>
       </div>
     </div>
@@ -44,6 +43,8 @@ export function MyCard() {
 }
 
 export function MyCardPremium() {
+  const { t } = useTranslation("common");
+
   return (
     <div>
       <div className={style.contenedorCardPremium}>
@@ -63,27 +64,23 @@ export function MyCardPremium() {
         </div>
         <div className={style.contenedorItems}>
           <p>
-            <span className={style.icon}>✔</span> Creación de hábitos diarios
-            ilimitados
+            <span className={style.icon}>✔</span> {t("item-precio1")}
           </p>
           <p>
-            <span className={style.icon}>✔</span> Metas semanales
+            <span className={style.icon}>✔</span> {t("item-precio2")}
           </p>
           <p>
-            <span className={style.icon}>✔</span> Recordatorios de tareas
-            pendientes
+            <span className={style.icon}>✔</span> {t("item-precio3")}
           </p>
           <p>
-            <span className={style.icon}>✔</span> Obtenga rutinas saludables
-            adaptadas a tus objetivos
+            <span className={style.icon}>✔</span> {t("item-precio4")}
           </p>
           <p>
-            <span className={style.icon}>✔</span> Mantente al tanto de tu
-            progreso
+            <span className={style.icon}>✔</span> {t("item-precio5")}
           </p>
         </div>
         <div className={style.contenedorButton}>
-          <MyButtonSmallBlueCard>Comprar</MyButtonSmallBlueCard>
+          <MyButtonSmallBlueCard>{t("comprar")}</MyButtonSmallBlueCard>
         </div>
       </div>
     </div>

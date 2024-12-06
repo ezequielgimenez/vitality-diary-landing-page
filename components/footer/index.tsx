@@ -1,14 +1,18 @@
 import style from "./index.module.css";
 import Image from "next/image";
-import LinkedInIMG from "../../public/images/linkedin.png";
-import GithubIMG from "../../public/images/github.png";
+import { useRouter } from "next/router";
 
 export function Footer() {
+  const router = useRouter();
+
+  const handleHome = () => {
+    router.push("/");
+  };
   return (
     <div className={style.footerLayout}>
       <section id="footer" className={style.footer}>
         <div className={style.footer_mainLinks}>
-          <h2 className={style.tituloLogo}>
+          <h2 onClick={handleHome} className={style.tituloLogo}>
             <div>
               <span className={style.firstLetter}>V</span>ITALITY
             </div>

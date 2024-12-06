@@ -1,7 +1,12 @@
 import style from "./index.module.css";
 
-export function StatsCard(props: any) {
-  const { percentage, text, info } = props;
+type myProps = {
+  percentage: string;
+  text: string;
+  info: string;
+};
+
+export function StatsCard({ percentage, text, info }: myProps) {
   return (
     <div data-aos="zoom-in-right" className={style.stats__card}>
       <h3>{percentage}</h3>

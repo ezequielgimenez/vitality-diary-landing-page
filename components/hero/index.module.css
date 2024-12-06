@@ -56,7 +56,7 @@
   .contenedorImg {
     display: flex;
     position: absolute;
-    width: 100%;
+    width: 1280px;
     justify-content: flex-end;
     align-items: flex-end;
   }
@@ -71,7 +71,15 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1330px) {
+  .contenedorImg {
+    display: flex;
+    position: absolute;
+    width: 1440px;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
   .img {
     width: 748px;
     height: 625px;

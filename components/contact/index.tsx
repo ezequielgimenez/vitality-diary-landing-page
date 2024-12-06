@@ -1,11 +1,15 @@
 import style from "./index.module.css";
 import { MyButtonSmallBlueCard } from "ui/buttons";
+
+import { useTranslation } from "next-i18next";
+
 export function ContactComponet() {
+  const { t } = useTranslation("common");
   return (
     <div>
       <section data-aos="zoom-in-right" id="contact" className={style.section}>
         <div>
-          <h1 className={style.title}>Contáctanos</h1>
+          <h1 className={style.title}>{t("contacto-titulo")}</h1>
         </div>
         <form className={style.form} action="">
           <div className={style.content}>

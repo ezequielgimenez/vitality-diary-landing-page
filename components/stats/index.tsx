@@ -1,33 +1,36 @@
 import { StatsCard } from "ui/stats-card";
 import style from "./index.module.css";
+import { useTranslation } from "next-i18next";
 
 export function StatsSection() {
+  const { t } = useTranslation("common");
+
   return (
     <div className={style.statsLayout}>
       <section id="stats" className={style.stats}>
         <h2 data-aos="zoom-in-right" className={style.stats__header}>
-          Nuestros resultados en cifras
+          {t("titulo-stats")}
         </h2>
         <div className={style.stats__container}>
           <StatsCard
             percentage="99%"
-            text="Usuarios satisfechos"
-            info="Más de 10,000 usuarios ya estan transformando su vida con nuestra plataforma"
+            text={t("titulo-item-stats1")}
+            info={t("parrafo-item-stats1")}
           ></StatsCard>
           <StatsCard
             percentage="300K"
-            text="Tareas completadas"
-            info="Se han completado más de 300,000 hábitos en nuestra plataforma."
+            text={t("titulo-item-stats2")}
+            info={t("parrafo-item-stats2")}
           ></StatsCard>
           <StatsCard
             percentage="90%"
-            text="Tasa de retención"
-            info="El 90% de los usuarios continúan organizando su vida con nosotros después del primer mes."
+            text={t("titulo-item-stats3")}
+            info={t("parrafo-item-stats3")}
           ></StatsCard>
           <StatsCard
             percentage="85%"
-            text="Progreso alcanzado"
-            info="El 85% de los usuarios reportan mejoras en su productividad y bienestar en las primeras 4 semanas."
+            text={t("titulo-item-stats4")}
+            info={t("parrafo-item-stats4")}
           ></StatsCard>
         </div>
       </section>

@@ -1,11 +1,14 @@
 import style from "./index.module.css";
+import { useTranslation } from "react-i18next";
 
 export function FeaturesComp() {
+  const { t } = useTranslation("common");
+
   return (
     <div>
       <section id="features" className={style.featuresSection}>
         <div data-aos="zoom-in-right" className={style.contenedorTitulo}>
-          <h2>Beneficios Destacados</h2>
+          <h2>{t("titulo-Beneficios")}</h2>
         </div>
         <div data-aos="zoom-in-right" className={style.contenedorInfo}>
           <div className={style.contenedorImg}>
@@ -16,16 +19,11 @@ export function FeaturesComp() {
           </div>
           <div className={style.contenedorTexto}>
             <div className={style.contenedorH1}>
-              <h1>Crea y organiza</h1>
+              <h1>{t("titulo-item1")}</h1>
             </div>
             <div className={style.linea}></div>
             <div className={style.contenedorParrafo}>
-              <p>
-                Establece y organiza tu rutina diaria fijando metas semanales
-                claras y alcanzables. Personaliza tus hábitos según tus
-                necesidades y lleva el control de tus avances para mantenerte
-                enfocado y motivado cada día.
-              </p>
+              <p>{t("parrafo-item1")}</p>
             </div>
           </div>
         </div>
@@ -38,16 +36,11 @@ export function FeaturesComp() {
           </div>
           <div className={style.contenedorTexto}>
             <div className={style.contenedorH1}>
-              <h1>Recibe notificaciones</h1>
+              <h1>{t("titulo-item2")}</h1>
             </div>
             <div className={style.linea}></div>
             <div className={style.contenedorParrafo}>
-              <p>
-                Recibe recordatorios para mantenerte al día con tus habitos
-                diarios y metas semanales. Recibe notificaciones para completar
-                tus tareas pendientes sin completar del día. Nunca más olvides
-                lo importante para tu bienestar.
-              </p>
+              <p>{t("parrafo-item2")}</p>
             </div>
           </div>
         </div>
@@ -60,16 +53,11 @@ export function FeaturesComp() {
           </div>
           <div className={style.contenedorTexto}>
             <div className={style.contenedorH1}>
-              <h1>Observa tu mejora</h1>
+              <h1>{t("titulo-item3")}</h1>
             </div>
             <div className={style.linea}></div>
             <div className={style.contenedorParrafo}>
-              <p>
-                Visualiza tu progreso de forma clara y sencilla. Obtén rutinas
-                saludables diseñadas especialmente para ti, adaptadas a tus
-                objetivos y necesidades mejorando tu salud y aumentando tu
-                productividad dedicando más tiempo a lo que realmente amas.
-              </p>
+              <p>{t("parrafo-item3")}</p>
             </div>
           </div>
         </div>

@@ -4,12 +4,20 @@ import Image from "next/image";
 import { MyButtonOutlined, MenuButtonLanguage } from "ui/buttons";
 import { BurgerIcon } from "ui/burger";
 import { useState } from "react";
+import { useRouter } from "next/router";
+import { useTranslation } from "react-i18next";
 
 export function MyHeader() {
   const [mostrarNavegacion, setMostrar] = useState(false);
-
+  const { i18n } = useTranslation();
+  const router = useRouter();
   const handleNav = () => {
     setMostrar(!mostrarNavegacion);
+  };
+
+  const changeLenguage = (lng) => {
+    i18n.changeLanguage(lng);
+    router.push(router.pathname, router.asPath, { locale: lng });
   };
 
   return (
@@ -46,11 +54,12 @@ export function MyHeader() {
                   </a>
                 </MyButtonOutlined>
               </li>
-              <li>
+              <div>
                 <MenuButtonLanguage
                   item1="ES"
                   item2="EN"
-                  redirectLanguageEN="/"
+                  onClickItem1={() => changeLenguage("es")}
+                  onClickItem2={() => changeLenguage("en")}
                 >
                   <Image
                     className={style.img}
@@ -61,7 +70,7 @@ export function MyHeader() {
                   ></Image>
                   ⌵
                 </MenuButtonLanguage>
-              </li>
+              </div>
             </ul>
           </nav>
         </div>
@@ -75,7 +84,7 @@ export function MyHeader() {
               <div>
                 <span className={style.firstLetter}> D</span>IARY ✔
               </div>
-            </h1>{" "}
+            </h1>
           </div>
           <div className={style.contenedorBurger} onClick={handleNav}>
             <BurgerIcon></BurgerIcon>

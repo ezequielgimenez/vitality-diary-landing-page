@@ -19,7 +19,8 @@ type PropsButtonMenu = {
   children: React.ReactNode;
   item1: string;
   item2: string;
-  redirectLanguageEN: string;
+  onClickItem1: () => void;
+  onClickItem2: () => void;
 };
 
 function ButtonOutlined({
@@ -129,12 +130,12 @@ export function MenuButtonLanguage({
   children,
   item1,
   item2,
-  redirectLanguageEN,
+  onClickItem1,
+  onClickItem2,
 }: PropsButtonMenu) {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
   const open = Boolean(anchorEl);
-  const router = useRouter();
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
   };
@@ -143,9 +144,9 @@ export function MenuButtonLanguage({
     setAnchorEl(null);
   };
 
-  const handleRedirect1 = () => {
-    setAnchorEl(null);
-    router.push(redirectLanguageEN);
+  const handleItemClick = (onClickItem?: () => void) => {
+    if (onClickItem) onClickItem(); // Llama a la función onClick del item
+    handleClose(); // Cierra el menú
   };
 
   return (
@@ -175,10 +176,22 @@ export function MenuButtonLanguage({
         }}
       >
         <div>
-          {item1 ? <MenuItem onClick={handleRedirect1}>{item1}</MenuItem> : ""}
+          {item1 ? (
+            <MenuItem onClick={() => handleItemClick(onClickItem1)}>
+              {item1}
+            </MenuItem>
+          ) : (
+            ""
+          )}
         </div>
         <div>
-          {item2 ? <MenuItem onClick={handleRedirect1}>{item2}</MenuItem> : ""}
+          {item2 ? (
+            <MenuItem onClick={() => handleItemClick(onClickItem2)}>
+              {item2}
+            </MenuItem>
+          ) : (
+            ""
+          )}
         </div>
       </Menu>
 
