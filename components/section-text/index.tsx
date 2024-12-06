@@ -8,11 +8,6 @@ import { useEffect } from "react";
 export function SectionTextComp() {
   const { t, i18n } = useTranslation("common");
 
-  useEffect(() => {
-    console.log("Idioma actual:", i18n.language); // Verifica el idioma actual
-    console.log("Traducción de 'titulo':", t("titulo")); // Verifica si está cargando la traducción
-  }, [i18n.language]);
-
   return (
     <div>
       <section className={style.section}>
@@ -24,10 +19,14 @@ export function SectionTextComp() {
             <p>{t("parrafo")}</p>
           </div>
           <div className={style.contenedorBoton}>
-            <MyButtonHero>{t("buttonComienza")}</MyButtonHero>
+            <a href="#pricing">
+              <MyButtonHero>{t("buttonComienza")}</MyButtonHero>
+            </a>
           </div>
           <div className={style.contenedorBotonMobile}>
-            <MyButtonHeroMobile>{t("buttonComienza")}</MyButtonHeroMobile>
+            <a href="#pricing">
+              <MyButtonHeroMobile>{t("buttonComienza")}</MyButtonHeroMobile>
+            </a>
           </div>
         </div>
         <div className={style.contenedorImagen}>

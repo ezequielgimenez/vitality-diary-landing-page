@@ -30,7 +30,7 @@ export function Footer() {
           <h3>Developers</h3>
           <div>
             <p>
-              <a href="" target="_blank">
+              <a href="https://github.com/ezequielgimenez" target="_blank">
                 <Image
                   className={style.img}
                   src="/images/github.png"
@@ -50,7 +50,7 @@ export function Footer() {
               </a>
             </p>
             <p>
-              <a href="" target="_blank">
+              <a href="https://github.com/lucasfrezzini" target="_blank">
                 <Image
                   className={style.img}
                   src="/images/github.png"
